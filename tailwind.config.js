@@ -5,4 +5,14 @@ export default {
     extend: {},
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["night"],
+  },
+  config: {
+    variants: {
+      extend: {
+        translate: ["group-hover"],
+      },
+    },
+  },
 };

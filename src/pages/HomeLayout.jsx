@@ -11,7 +11,7 @@ const HomeLayout = () => {
       {isPageLoading ? (
         <Loading />
       ) : (
-        <section>
+        <section className="align-element">
           <Outlet />
         </section>
       )}
