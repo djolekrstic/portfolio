@@ -1,0 +1,10 @@
+export { default as html5 } from "./skill1.svg";
+export { default as css3 } from "./skill2.svg";
+export { default as js } from "./skill3.svg";
+export { default as react } from "./skill4.svg";
+export { default as node } from "./skill5.svg";
+export { default as git } from "./skill6.svg";
+export { default as ubuntu } from "./skill7.svg";
+export { default as figma } from "./skill8.svg";
+export { default as tailwind } from "./skill9.svg";
+export { default as sass } from "./skill10.svg";

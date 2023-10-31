@@ -15,7 +15,7 @@ const MobileMenu = () => {
           <input
             type="checkbox"
             checked={showLinks}
-            onClick={() => setShowLinks(!showLinks)}
+            onChange={() => setShowLinks(!showLinks)}
           />
           {/* hamburger icon */}
           <FaBars className="swap-off w-6 h-6 lg:w-8 lg:h-8" />
@@ -32,7 +32,7 @@ const MobileMenu = () => {
               <ul>
                 {links.map(({ id, name, route }) => {
                   return (
-                    <li>
+                    <li key={id}>
                       <NavLink
                         key={id}
                         to={route}

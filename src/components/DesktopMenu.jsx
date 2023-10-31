@@ -9,7 +9,7 @@ const DesktopMenu = () => {
         <ul className="flex">
           {links.map(({ id, name, route }) => {
             return (
-              <li>
+              <li key={id}>
                 <NavLink
                   key={id}
                   to={route}

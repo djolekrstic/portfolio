@@ -4,7 +4,7 @@ import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
-    <nav className="absolute navbar bg-base-200 px-6 py-3 lg:px-12">
+    <nav className="navbar bg-base-200 px-6 py-3 lg:px-12">
       <div className="navbar-start">
         <NavLink
           to="/"
