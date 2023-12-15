@@ -9,14 +9,12 @@ const DesktopMenu = () => {
         <ul className="flex">
           {links.map(({ id, name, route }) => {
             return (
-              <li>
+              <li key={id}>
                 <NavLink
                   key={id}
                   to={route}
-                  className={({ isActive }) =>
-                    `px-6 text-lg hover:text-xl uppercase hover:text-primary duration-300 ${
-                      isActive && "text-primary"
-                    }`
+                  className={() =>
+                    `px-6 text-lg hover:text-xl uppercase hover:text-primary duration-300`
                   }
                 >
                   {name}
@@ -33,7 +31,7 @@ const DesktopMenu = () => {
               <li key={id}>
                 <a
                   href={url}
-                  className="text-2xl hover:text-primary"
+                  className="text-3xl hover:text-primary"
                   target="__blank"
                 >
                   {icon}

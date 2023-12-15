@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
-import DesktopMenu from "./DesktopMenu";
-import MobileMenu from "./MobileMenu";
+import { DesktopMenu, MobileMenu } from "../components";
 
 const Navbar = () => {
   return (
-    <nav className="absolute navbar bg-base-200 px-6 py-3 lg:px-12">
+    <nav className="fixed navbar bg-base-200 px-6 py-3 lg:px-12 z-10">
       <div className="navbar-start">
         <NavLink
           to="/"
