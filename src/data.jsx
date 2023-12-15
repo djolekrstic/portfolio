@@ -17,22 +17,17 @@ export const links = [
   {
     id: nanoid(),
     name: "home",
-    route: "/",
+    route: "#hero",
   },
   {
     id: nanoid(),
     name: "about",
-    route: "about",
+    route: "#about",
   },
   {
     id: nanoid(),
     name: "projects",
-    route: "projects",
-  },
-  {
-    id: nanoid(),
-    name: "contact",
-    route: "contact",
+    route: "#projects",
   },
 ];
 

@@ -1,5 +1,6 @@
-import { Outlet, useNavigation } from "react-router-dom";
-import { Navbar, Loading } from "../components";
+import { ScrollRestoration, useNavigation } from "react-router-dom";
+import { Loading } from "../components";
+import { About, Hero, Navbar, Projects } from "../Layout";
 
 const HomeLayout = () => {
   const navigation = useNavigation();
@@ -7,12 +8,15 @@ const HomeLayout = () => {
 
   return (
     <>
+      <ScrollRestoration />
       <Navbar />
       {isPageLoading ? (
         <Loading />
       ) : (
         <section className="align-element">
-          <Outlet />
+          <Hero />
+          <About />
+          <Projects />
         </section>
       )}
     </>

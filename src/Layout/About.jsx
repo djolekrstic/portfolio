@@ -3,7 +3,7 @@ import imgAbout from "../assets/about.svg";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="about" className="min-h-screen flex flex-col">
       <div className="mt-24 lg:mt-36 flex items-center justify-between">
         <div className="flex flex-col lg:w-3/5">
           <h2 className="text-white text-5xl">About</h2>
