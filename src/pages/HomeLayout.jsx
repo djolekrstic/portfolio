@@ -1,6 +1,6 @@
 import { ScrollRestoration, useNavigation } from "react-router-dom";
 import { Loading } from "../components";
-import { About, Hero, Navbar, Projects } from "../Layout";
+import { About, Footer, Hero, Navbar, Projects } from "../Layout";
 
 const HomeLayout = () => {
   const navigation = useNavigation();
@@ -19,6 +19,7 @@ const HomeLayout = () => {
           <Projects />
         </section>
       )}
+      <Footer />
     </>
   );
 };
