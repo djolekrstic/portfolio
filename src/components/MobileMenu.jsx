@@ -36,11 +36,7 @@ const MobileMenu = () => {
                       <NavLink
                         key={id}
                         to={route}
-                        className={({ isActive }) =>
-                          `${
-                            isActive && "bg-base-100"
-                          } block px-6 py-3 text-3xl uppercase active:bg-base-100`
-                        }
+                        className="block px-6 py-3 text-3xl uppercase"
                         onClick={() => setShowLinks(!showLinks)}
                       >
                         {name}
@@ -55,11 +51,7 @@ const MobileMenu = () => {
                 {social.map(({ id, url, icon }) => {
                   return (
                     <li key={id}>
-                      <a
-                        href={url}
-                        className="text-5xl active:text-base-100"
-                        target="__blank"
-                      >
+                      <a href={url} className="text-5xl" target="__blank">
                         {icon}
                       </a>
                     </li>
